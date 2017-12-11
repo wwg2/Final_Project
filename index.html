@@ -1,25 +1,40 @@
 <html>
 
+
+<html>
+<style>
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;	    
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    }
+</style>
+
 <h1> Sign Up Page </h1>
 
 <form action="/action_page.php" style="border:1px solid #ccc">
   <div class="container">
-     <label> <b> Email </b> </label>
-  <input type="text" placeholder="Enter Email" name="email" required>
-     <label> <b> First Name </b> </label>
-  <input type="text" placeholder="Enter First Name" name="fname" required>
-     
+    
+    <label for="email">  <b> Email: </b> </label> <br>
+  <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+     <label for="fname"> <b> First Name: </b> </label>
+  <input type="text" placeholder="Enter First Name" name="fname" id="fname" required>
+    
+    <label for="lname"> <b> Last Name: </b> </label> <br>
+  <input type="text" placeholder="Enter Last Name" name="lname" id="lname" required>
 
 
      <label> <b>Gender</b> </label>
-  	  <select id = "myList">
-	     <option value = "1">Male</option>
-	     <option value = "2">Female</option>
-	     <option value = "3">Other</option>
-	  </select>
-
-
-
+  	  <select  name = "genders">
+	     <option  value = "Male">Male</option>
+	     <option  value = "Female">Female</option>
+	     <option  value = "Other">Other</option>
+	  </select> 	  
 
 </div>
 </form>
