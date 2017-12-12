@@ -2,8 +2,7 @@
 
 
 
-body{
-padding:0;
+body{ 
 font-family: 'Lato', sans-serif;
 background:#0d4061;
 		}
@@ -48,9 +47,8 @@ button {
 	width: 100%;
 		 }
 .content {
-	padding: 4em 0;
-	min-height: 400px;
-	width: 100%;
+	
+
 	}
 
 .content h1{
