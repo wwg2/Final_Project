@@ -2,7 +2,7 @@
 
 
 
-body{ 
+body{
 font-family: 'Lato', sans-serif;
 background:#0d4061;
 		}
@@ -47,7 +47,8 @@ button {
 	width: 100%;
 		 }
 .content {
-	
+	width: 100%;
+
 
 	}
 
@@ -72,12 +73,11 @@ button {
 	}
 
 .container {
-	padding: 16px;
 	background-color: #6ba6c6;
 	width: 50%;
 	margin-left: auto;
 	margin-right: auto;
-
+	padding: 8px;
 	}
 
 .clearfix::after {
