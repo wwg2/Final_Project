@@ -4,7 +4,6 @@
 
 body{
 padding:0;
-margin:0;
 font-family: 'Lato', sans-serif;
 background:#0d4061;
 		}
@@ -49,8 +48,12 @@ button {
 	width: 100%;
 		 }
 .content {
-	padding: 4em 0;.
+	padding: 4em 0;
+
+	left:50%;
+	margin-right:-50%;
 	}
+
 .content h1{
 	text-align:center;
 		font-size:40px;
@@ -73,7 +76,8 @@ button {
 
 .container {
 	padding: 16px;
-	width: 50%;
+	background-color: #6ba6c6;
+
 	}
 
 .clearfix::after {
