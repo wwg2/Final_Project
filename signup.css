@@ -1,7 +1,36 @@
 
 
 
-Input[type=text], input[type=password], input[type=email] {
+
+body{
+padding:0;
+margin:0;
+font-family: 'Lato', sans-serif;
+background:#0d4061;
+		}
+
+.content h1{
+text-align:center;
+font-size:40px;
+color:#fff;	
+}
+
+
+h1,h2,h3,h4,h5,h6{
+	margin:0;			   
+	}	
+p{
+	margin:0;
+	}
+ul{
+	margin:0;
+	padding:0;
+	}
+label{
+	margin:0;
+	}
+
+Input[type=text], input[type=password], input[type=email], input[type=date] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -19,7 +48,16 @@ button {
 	cursor: pointer;
 	width: 100%;
 		 }
-		 
+.content {
+	padding: 4em 0;.
+	}
+.content h1{
+	text-align:center;
+		font-size:40px;
+			color:#fff;	
+			}
+
+
 .cancelbtn {				
 	padding: 14px 20px;
 	background-color: #f44336;
