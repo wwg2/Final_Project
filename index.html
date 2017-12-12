@@ -1,10 +1,10 @@
-<html>
+<html>i
 
 
 <html>
 <style>
 
-input[type=text], input[type=password] {
+input[type=text], input[type=password], input=[type=email] {
     width: 100%;
     padding: 12px 20px;	    
     margin: 8px 0;
@@ -15,12 +15,11 @@ input[type=text], input[type=password] {
 </style>
 
 <h1> Sign Up Page </h1>
-<p> Enter Your Info Below </p>
 <form action="/action_page.php" style="border:1px solid #ccc">
   <div class="container">
     
     <label for="email">  <b> Email: </b> </label> <br>
-  <input type="email" placeholder="Enter Email" name="email" id="email" required>
+  <input type="text" placeholder="Enter Email" name="email" id="email" required>
     
     <label for= "password"> <b> Password: </b> </label> <br>
   <input type="password" placeholder="Enter Password" name="pswd" id="pswd" required>
@@ -32,12 +31,11 @@ input[type=text], input[type=password] {
   <input type="text" placeholder="Enter Last Name" name="lname" id="lname" required>
 
 
-     <label> <b>Gender: </b> </label>
-  	  <select  name = "genders">
+     <label> <b>Gender: </b> </label> <br>
 	     <input type="radio" name="gender" value = "Male" checked>Male<br>
 	     <input type="radio" name="gender" value = "Female">Female<br>
 	     <input type="radio" name="gender" value = "Other">Other<br> <br>
-	  </select> 	  
+	   	  
 
 </div>
 </form>
