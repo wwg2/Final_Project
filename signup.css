@@ -49,9 +49,8 @@ button {
 		 }
 .content {
 	padding: 4em 0;
-
-	left:50%;
-	margin-right:-50%;
+	min-height: 400px;
+	width: 100%;
 	}
 
 .content h1{
@@ -77,6 +76,9 @@ button {
 .container {
 	padding: 16px;
 	background-color: #6ba6c6;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
 
 	}
 
