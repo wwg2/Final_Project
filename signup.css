@@ -56,7 +56,10 @@ button {
 		font-size:40px;
 			color:#fff;	
 			}
-
+.content h3{
+	font-size:20px;
+	color:#fff;
+	}
 
 .cancelbtn {				
 	padding: 14px 20px;
@@ -70,6 +73,7 @@ button {
 
 .container {
 	padding: 16px;
+	width: 50%;
 	}
 
 .clearfix::after {
