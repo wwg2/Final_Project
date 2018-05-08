@@ -14,6 +14,14 @@
 	</form>
 
 	<table>
-		<thead> 
+		<thead>
+			<tr>
+				<th> N </th>
+				<th> Task </th> 
+				<th> Action </th>
+			</tr>
+		</thead>
+		<tbody>
+		
 </body>
 </html> 
