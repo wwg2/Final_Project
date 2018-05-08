@@ -1,6 +1,7 @@
 <html>
 <head>
 	<title> IS218 To do list app </title>
+	<link rel="stylesheet" type="text/css" href="signup.css">
 </head>
 <body>
 	<div class="heading">
@@ -16,7 +17,7 @@
 	<table>
 		<thead>
 			<tr>
-				<th> N </th>
+				<th> # </th>
 				<th> Task </th> 
 				<th> Action </th>
 			</tr>
