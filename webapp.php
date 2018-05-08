@@ -23,5 +23,15 @@
 		</thead>
 		<tbody>
 		
+			<tr>
+				<td>1</td>
+				<td class="task"> first task </td>
+				<td class= "delete">
+					<a href="#">x</a> 
+				</td>
+			</tr>
+		</tbody>
+	</table>
 </body>
-</html> 
+</html
+
