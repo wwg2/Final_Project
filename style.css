@@ -32,3 +32,24 @@ form {
 	padding: 5px 20px; 
 }
 
+table {
+	width: 50%;
+	margin: 30px auto;
+	border-collapse: collapse;
+}
+
+tr {
+	border-bottom: 1px solid #cbcbcb;
+}
+
+th {
+	font-size: 19px;
+	color: #6B8E23;
+}
+
+th, td{
+	border: none;
+	height: 30px;
+	padding: 2px;
+}
+

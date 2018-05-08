@@ -1,7 +1,7 @@
 <html>
 <head>
 	<title> IS218 To do list app </title>
-	<link rel="stylesheet" type="text/css" href="signup.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<div class="heading">
@@ -10,7 +10,7 @@
 
 	<form method="POST" action="webapp.php">
 		<input type="text" name="task" class="task_input"> 
-		<button type="submit" class="add_btn" name="submit"> Add Task
+		<button type="submit" class="task_btn" name="submit"> Add Task
 		</button>
 	</form>
 
