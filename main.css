@@ -20,6 +20,7 @@ a {
   border-radius:2px;
   box-shadow: 3px 3px 0 rgba(0, 0, 0, .1);
   box-sizing:border-box;
+  border-radius: 25px;
 }
 
 .list .header {
