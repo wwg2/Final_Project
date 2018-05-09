@@ -15,8 +15,9 @@
       <h1 class="header"> To Do List </h1>
        <ul class="items">
          <li>
-           <span class="item">Pick up food</span></li> 
+           <span class="item">Pick up food</span> 
          <a href="#" class="done-button"> Mark as Complete </a>
+         </li>
          <li><span class="item done">Learn CSS</span></li> 
        </ul>
         <form class="item-add" action="add.php" method="post">
