@@ -44,7 +44,7 @@ a {
 }
 
 .items li:hover .done-button {
-  opacity:1;
+  opacity:100%;
 }
 
 .items .done-button {
