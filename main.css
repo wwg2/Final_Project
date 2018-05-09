@@ -63,5 +63,11 @@ a {
   border:0;
   opacity:50%;
 }
-  
+.submit {
+  background-color: #fff;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  width: 100% ;
+  margin-top:10px;
+}
   
