@@ -36,6 +36,10 @@ a {
   outline:none;
 }
 
+.input {
+  width:100%;
+}
+
 .items li,
 .item-add .input {
   border:0;
