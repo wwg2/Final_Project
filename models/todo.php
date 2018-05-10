@@ -89,3 +89,4 @@ class Todo {
         return ['success' => true, 'msg' => 'Your todo completion status has been updated'];
     }
 }
+?>
