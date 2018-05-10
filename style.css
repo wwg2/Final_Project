@@ -53,3 +53,20 @@ th, td{
 	padding: 2px;
 }
 
+tr:hover {
+	background: #E9E9E9;
+}
+.task {
+	text-align: center;
+}
+.delete{
+	text-align: center;
+}
+.delete a{
+	color: white;
+	background: #a52a2a;
+	padding: 1px 6px;
+	border-radius: 3px;
+	text-decoration: none;
+}
+	
