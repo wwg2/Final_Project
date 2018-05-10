@@ -82,5 +82,29 @@
                                 <input type="hidden" name="action" value="toggle_todo">
                                 <input type="hidden" name="todo-id" value="<?php echo $todo['id'] ?>">
                                 <button type="submit" class="btn btn-sm btn-success"><i class="fa fa-check" aria-hidden="true"></i></button>
-                              </form>
+                             </form>
+                             
+                                 </td>
+                          <?php endif;
+                           ?>
+                        </tr>
+                      <?php endif; 
+                      ?>
+                    <?php endforeach; 
+                    ?>
+                  </tbody>
+              </table>
+          </div>
+          <div id="complete-todos">
+
+                <h3>Completed Todos</h3>
+
+                <table class="table table-hover">
+
+                  <thead>
+                    <th class="w-25">Title</th>
+                    <th>Created on</th>
+                    <th>Due date</th>
+                    <th>Actions</th>
+                  </thead>
 
