@@ -5,6 +5,14 @@
     FROM items
     WHERE user = :user
 ");
+$itemsQuery->execute(['user'=> $_SESSION['user_id']]);
+
+$items = $itemsQuery->rowCount() ? $itemsQuery : [];
+
+foreach($items as $item) {
+  print_r($item);
+}
+  
 
 ?>
 
