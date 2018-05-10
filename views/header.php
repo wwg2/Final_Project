@@ -14,3 +14,25 @@
     <link href="https://web.njit.edu/~snh7/is218/todo/assets/css/main.css" rel="stylesheet">
     <title>Todo App</title>
   </head>
+
+<body>
+ 
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+
+      <a class="navbar-brand" href="https://web.njit.edu/~snh7/is218/todo/">My Todo App</a>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto"></ul>
+                <?php if(!isset($_SESSION['email'])):
+         ?>
+          <ul class="navbar-nav float-right">
+            <li class="nav-item active">
+              <a class="nav-link" href="https://web.njit.edu/~snh7/is218/todo/login">Login</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="https://web.njit.edu/~snh7/is218/todo/register">Register</a>
+            </li>
+          </ul>
+        <?php else: 
+        ?>
