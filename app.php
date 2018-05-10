@@ -1,3 +1,14 @@
+<?php
+  require_once 'app/init.php';
+  $itemsQuery = $db->prepare("
+    SELECT id,name, done
+    FROM items
+    WHERE user = :user
+");
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
