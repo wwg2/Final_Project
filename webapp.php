@@ -5,11 +5,11 @@ $password = "JF6UOlD8";
 // Create connection
 $db = mysqli_connect($servername, $username, $password,'todos');
 
- Check connection
- if ($conn->connect_error) {
-     die("Connection failed: " . $conn->connect_error);
- } 
-echo "Connected successfully";
+ //Check connection
+// if ($conn->connect_error) {
+//     die("Connection failed: " . $conn->connect_error);
+// } 
+//echo "Connected successfully";
 
 if (isset($_POST['submit'])) {
 	$task = $_POST['task'];
