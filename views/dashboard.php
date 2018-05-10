@@ -160,4 +160,20 @@
                               <input type="hidden" name="todo-id" value="<?php echo $todo['id'] ?>">
                               <button type="submit" class="btn btn-sm btn-warning"><i class="fa fa-undo" aria-hidden="true"></i></button>
                             </form>
+                           
+                            </td>
+                          <?php endif; 
+                          ?>
+                        </tr>
+                      <?php endif; 
+                      ?>
+                    <?php endforeach; 
+                    ?>
+                  </tbody>
+                </table>
+              </div>
+              <?php endif;
+               ?>
+          </div>
+
 
