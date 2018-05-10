@@ -1,4 +1,13 @@
-
+<?php
+	
+	if (isset($_POST['submit'])) {
+		$task = $_POST['task'];
+		
+		mysqli_query($db, "INSERT INTO tasks (task) VALUES ('$task')");
+		header('location: index.php')
+	}
+	$tasks = mysqli_query($db, "SELECT * FROM tasks");
+?>
 
 <html>
 <head>
@@ -37,5 +46,5 @@
 		</tbody>
 	</table>
 </body>
-</html
+</html>
 
