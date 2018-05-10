@@ -69,4 +69,6 @@ tr:hover {
 	border-radius: 3px;
 	text-decoration: none;
 }
-	
+body {
+	font-size: 18px;
+}
