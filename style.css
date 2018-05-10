@@ -25,7 +25,7 @@ form {
 
 .add_btn {
 	height: 39px;
-	background: #FFF8DC
+	background: #FFF8DC;
 	color: #6B8E23;
 	border: 2px solid #6B8E23;
 	border-radius: 5px;
@@ -57,13 +57,13 @@ tr:hover {
 	background: #E9E9E9;
 }
 .task {
-	text-align: center;
+	text-align: left;
 }
 .delete{
 	text-align: center;
 }
 .delete a{
-	color: #fff;
+	color: white;
 	background: #a52a2a;
 	padding: 1px 6px;
 	border-radius: 3px;
