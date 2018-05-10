@@ -20,7 +20,7 @@
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
 
-      <a class="navbar-brand" href="https://web.njit.edu/~wwg2/Final_Project/index">HOMEPAGE</a>
+      <a class="navbar-brand" href="https://web.njit.edu/~wwg2/Final_Project/index.php">HOMEPAGE</a>
 
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto"></ul>
