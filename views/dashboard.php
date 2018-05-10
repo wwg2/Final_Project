@@ -31,3 +31,30 @@
                   </thead>
 
                   <tbody>
+                   
+                   <?php foreach($todos as $todo): 
+                    ?>
+                      <?php if(!$todo['isdone']): 
+                      ?>
+
+                        <tr>
+                          <?php if((int)$todo['id'] == $edit_id): 
+                          ?>
+                            <form class="form" action="." method="POST">
+
+                              <input type="hidden" name="action" value="edit_todo">
+                              <input type="hidden" name="todo-id" value="<?php echo $todo['id'] ?>">
+
+                              <td> <input type="text" class="form-control" name="title" value="<?php echo $todo['message'] ?>"> </td>
+
+                              <td><?php echo date("F j Y", strtotime($todo['createddate'])) ?></td>
+
+                              <td><input type="datetime-local" class="form-control" name="due-date" value="<?php echo date("Y-m-d\TH:i", strtotime($todo['duedate'])) ?>"></td>
+                              <td>
+                                  <button type="submit" class="btn btn-sm btn-success"><i class="fa fa-check-circle" aria-hidden="true"></i></button>
+                                </form>
+                                <form style="display:inline" action="." method="POST">
+                                  <button type="submit" class="btn btn-sm btn-danger"><i class="fa fa-ban" aria-hidden="true"></i></button>
+                                </form>
+                              </td>
+
