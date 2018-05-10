@@ -2,23 +2,21 @@
 $servername = "sql2.njit.edu";
 $username = "wwg2";
 $password = "JF6UOlD8";
-
 // Create connection
-$conn = new mysqli($servername, $username, $password);
+$db = mysqli_connect($servername, $username, $password,'todos');
 
 // Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-} 
-echo "Connected successfully";
+// if ($conn->connect_error) {
+//     die("Connection failed: " . $conn->connect_error);
+// } 
+// echo "Connected successfully";
 
 if (isset($_POST['submit'])) {
 	$task = $_POST['task'];
 	
-	mysqli_query($db, "INSERT INTO todos (task) VALUES ('$task')");
+	mysqli_query('wwg2', "INSERT INTO todos (task) VALUES ('$task')");
 	header('location: webapp.php');
 } 
-?>
 
 
 
