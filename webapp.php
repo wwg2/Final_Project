@@ -1,3 +1,15 @@
+<?php
+	$db = mysqli_connect('sql2.njit.edu', 'wwg2', 'JF6UOlD8', 'wwg2');
+	
+	if (isset($_POST['submit'])) {
+		$task = $_POST['task'];
+		
+		mysqli_query($db, "INSERT INTO tasks (task) VALUES ('$task')");
+		header('location: index.php')
+	}
+	$tasks = mysqli_query($db, "SELECT * FROM tasks");
+?>
+
 <html>
 <head>
 	<title> IS218 To do list app </title>
