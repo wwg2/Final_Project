@@ -27,7 +27,7 @@ form {
 	height: 39px;
 	background: #FFF8DC
 	color: #6B8E23;
-	border: 2px solid #6B8E23
+	border: 2px solid #6B8E23;
 	border-radius: 5px;
 	padding: 5px 20px; 
 }
@@ -63,7 +63,7 @@ tr:hover {
 	text-align: center;
 }
 .delete a{
-	color: white;
+	color: #fff;
 	background: #a52a2a;
 	padding: 1px 6px;
 	border-radius: 3px;
