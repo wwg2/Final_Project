@@ -57,4 +57,30 @@
                                   <button type="submit" class="btn btn-sm btn-danger"><i class="fa fa-ban" aria-hidden="true"></i></button>
                                 </form>
                               </td>
+                 
+                 <?php else: 
+                          ?>
+                            <td><?php echo $todo['message'] ?></td>
+                            <td><?php echo date("F j Y", strtotime($todo['createddate'])) ?></td>
+                            <td><?php echo date("m/d/Y g:ia", strtotime($todo['duedate'])) ?></td>
+
+                            <td>
+
+                              <form style="display:inline" action="." method="POST">
+                                <input type="hidden" name="action" value="delete_todo">
+                                <input type="hidden" name="todo-id" value="<?php echo $todo['id'] ?>">
+                                <button type="submit" class="btn btn-sm btn-danger"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                              </form>
+
+                              <form style="display:inline" action="." method="POST">
+                                <input type="hidden" name="action" value="set_edit_todo">
+                                <input type="hidden" name="todo-id" value="<?php echo $todo['id'] ?>">
+                                <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+                              </form>
+
+                              <form style="display:inline" action="." method="POST">
+                                <input type="hidden" name="action" value="toggle_todo">
+                                <input type="hidden" name="todo-id" value="<?php echo $todo['id'] ?>">
+                                <button type="submit" class="btn btn-sm btn-success"><i class="fa fa-check" aria-hidden="true"></i></button>
+                              </form>
 
