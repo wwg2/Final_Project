@@ -17,8 +17,7 @@
          <li>
            <span class="item">Pick up food</span> 
          <a href="#" class="done-button"> Mark as Complete </a>
-         </li>
-         <li><span class="item done">Learn CSS</span></li> 
+         </li> 
        </ul>
         <form class="item-add" action="add.php" method="post">
             <input type="text" name="name" placeholder="Type a new task here" class="input" autocomplete="off" required>
