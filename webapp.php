@@ -35,10 +35,12 @@
 			</tr>
 		</thead>
 		<tbody>
+		<?php while ($row = mysqli_fetch_array($tasks)) { ?>
 		
+
 			<tr>
-				<td>1</td>
-				<td class="task"> first task </td>
+				<td><?php echo $row['id']; ?></td>
+				<td class="task"> <?php echo $row['task']; ?> </td>
 				<td class= "delete">
 					<a href="#">x</a> 
 				</td>
