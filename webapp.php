@@ -15,7 +15,7 @@ echo "Connected successfully";
 if (isset($_POST['submit'])) {
 	$task = $_POST['task'];
 	
-	mysqli_query($db, "INSERT INTO tasks (task) VALUES ('$task')");
+	mysqli_query($db, "INSERT INTO todos (task) VALUES ('$task')");
 	header('location: webapp.php');
 } 
 ?>
