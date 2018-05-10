@@ -1,13 +1,17 @@
-<?php $myPDO = newPDO('sql2.njit.edu';'wwg2','wwg2','JF6UOlD8')
- 
-	
-	if (isset($_POST['submit'])) {
-		$task = $_POST['task'];
-		
-		mysqli_query($db, "INSERT INTO tasks (task) VALUES ('$task')");
-		header('location: webapp.php')
-	}
-	$tasks = mysqli_query($db, "SELECT * FROM tasks");
+<?php
+$servername = "sql2.njit.edu";
+$username = "wwg2";
+$password = "JF6UOlD8";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+echo "Connected successfully";
+
 ?>
 
 <html>
