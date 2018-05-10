@@ -45,5 +45,3 @@ function do_register() {
     }
 }
 ?>
-    
- ?>
