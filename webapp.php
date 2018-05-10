@@ -1,9 +1,21 @@
 <?php
-$servername = "sql2.njit.edu";
-$username = "wwg2";
-$password = "JF6UOlD8";
-// Create connection
-$db = mysqli_connect($servername, $username, $password,'todos');
+class Database {
+	protected static $sql;
+	private static $dsn = 'mysql:host=sql1.njit.edu;dbname=snh7';
+	private static $username = "snh7";
+	private static $password = "urku3NyPq";
+		//PDO object is returned
+		public function connect() {
+			if(!isset(self::$sql)) {
+				try {
+					self::$sql = new PDO(self::$dsn, self::$username, self::$password);
+				} catch (PDOException $e) {
+					echo $e->getMessage();
+					exit();
+				}
+			}
+			return self::$sql;
+		}
 
  //Check connection
 // if ($conn->connect_error) {
