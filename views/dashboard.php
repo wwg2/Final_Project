@@ -175,5 +175,28 @@
               <?php endif;
                ?>
           </div>
+<div class="card-footer">
+
+            <form class="form-inline" action="." method="POST">
+
+              <input type="hidden" name="action" value="add_todo">
+
+              <div class="form-group mx-sm-3">
+                <label class="mr-3 font-weight-bold" for="title">New Todo</label>
+                <div class="input-group-addon" size=100>Title</div>
+                <input type="text" class="form-control" id="title" name="title" placeholder="Todo title">
+              </div>
+
+              <div class="form-group mx-sm-3">
+                <div class="input-group-addon">Due date</div>
+                <input type="datetime-local" class="form-control" id="due-date" name="due-date">
+              </div>
+              
+              <button type="submit" class="btn btn-primary">Add Todo</button>
+            </form>
+          </div>
+        </div>
+    </main>
+<?php include 'footer.php'; ?>
 
 
