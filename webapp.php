@@ -1,5 +1,4 @@
 <?php
-	$db = mysqli_connect('sql2.njit.edu', 'wwg2', 'JF6UOlD8', 'wwg2');
 	
 	if (isset($_POST['submit'])) {
 		$task = $_POST['task'];
