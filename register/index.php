@@ -25,7 +25,25 @@ function do_register() {
     if(User::getUserByEmail($email)) {
         $status = ['success' => false, 'msg' => "There is already an account registered under $email"];
         return include('../views/register.php');
-    }
+     }
+    $user = new User();
+    $user->setFirstName($first_name);
+    $user->setLastName($last_name);
+    $user->setEmail($email);
+    $user->setPassword($password);
+    $user->setPhone($phone);
+    $user->setGender($gender);
+    $user->setBirthday($dob);
+    $reg = $user->register();
     
+    if($reg['success']) {
+        $user->setSession();
+        header('Location: ../dashboard');
+    } else {
+        $err = $reg['msg'];
+        include '../views/register.php';
+    }
+}
+?>
     
  ?>
