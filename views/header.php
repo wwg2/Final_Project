@@ -36,3 +36,13 @@
           </ul>
         <?php else: 
         ?>
+        <ul class="navbar-nav float-right">
+              <li class="nav-item active">
+                <a class="nav-link" href="https://web.njit.edu/~snh7/is218/todo/logout">Logout</a>
+              </li>
+            </ul>
+            
+        <?php endif; 
+        ?>
+      </div>
+    </nav>
