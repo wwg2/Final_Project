@@ -45,4 +45,32 @@
               <label for="password">Password</label>
               <input type="password" class="form-control" placeholder="*******" name="password" id="password">
             </div>
+    
+            <div class="row">
 
+              <div class="col">
+
+                <div class="form-group">
+
+                  <label class="mr-sm-2" for="gender">Gender</label>
+
+                  <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="gender" name="gender">
+                    <option selected value='none'>Choose one...</option>
+                    <option value="m">Male</option>
+                    <option value="f">Female</option>
+                    <option value="o">Other</option>
+                  </select>
+
+                </div>
+              </div>
+
+              <div class="col">
+                <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+              </div>
+
+            </div>
+          </form>
+        </div>
+      <div>
+    </div>
+<?php include 'footer.php'; ?>
