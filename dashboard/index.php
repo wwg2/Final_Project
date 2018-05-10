@@ -29,5 +29,19 @@ switch($action) {
     case 'toggle_todo':
         $status = toggle_todo();
         break;
-}
 
+}
+function set_edit_todo() {
+    return filter_input(INPUT_POST, 'todo-id', FILTER_VALIDATE_INT);
+}
+function edit_todo() {
+    $id = filter_input(INPUT_POST, 'todo-id', FILTER_VALIDATE_INT);
+    $title = filter_input(INPUT_POST, 'title', FILTER_SANITIZE_SPECIAL_CHARS);
+    $due_date = filter_input(INPUT_POST, 'due-date', FILTER_SANITIZE_SPECIAL_CHARS);
+    return Todo::edit($id, $title, $due_date);
+}
+function show_dashboard($status = null, $edit_id = null) {
+    $todos = Todo::getTodosByUserId($_SESSION['id']);
+    include '../views/dashboard.php';
+}
+ ?>
