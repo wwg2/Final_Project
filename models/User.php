@@ -33,7 +33,67 @@ class User {
     public function getPassword() {
         return $this->password;
     }
-
+//Setters
+    public function setEmail($email) {
+        $this->email = $email;
+        return $this;
+    }
+    public function setFirstName($firstName) {
+        $this->firstName = $firstName;
+        return $this;
+    }
+    public function setLastName($lastName) {
+        $this->lastName = $lastName;
+        return $this;
+    }
+    public function setPhone($phone) {
+        $this->phone = $phone;
+        return $this;
+    }
+    public function setBirthday($birthday) {
+        $this->birthday = $birthday;
+        return $this;
+    }
+    public function setGender($gender) {
+        $this->gender = $gender;
+        return $this;
+    }
+    public function setPassword($password) {
+        $this->password = $password;
+        return $this;
+    }
+    public function register() {
+        $db = new Database();
+        $query = "INSERT INTO accounts
+                    (email, fname, lname, phone, birthday, gender, password)
+                    VALUES
+                    ('$this->email', '$this->firstName',
+                    '$this->lastName', '$this->phone',
+                    '$this->birthday', '$this->gender',
+                    '$this->password')";
+        $db->query($query);
+        return  ['success' => true, 'msg', 'You have successfully been registered'];
+    }
+    public static function getUserByUserId($id) {
+        $db = new Database();
+        $user = $db->query("SELECT * FROM accounts WHERE id = '$id'");
+        try {
+            return $user[0];
+        } catch(Exception $e) {
+            return false;
+        }
+    }
+    public static function getUserByEmail($email) {
+        $db = new Database();
+        $query = "SELECT * FROM accounts WHERE email = '$email'";
+        $user = $db->query($query);
+        try {
+            return $user[0];
+        } catch(Exception $e)    {
+            return false;
+        }
+    }
+    
 
 
 
