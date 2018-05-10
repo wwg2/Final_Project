@@ -16,6 +16,20 @@ class Database {
 			}
 			return self::$sql;
 		}
+	public function query($query) {
+	        try {
+	    		$sql = $this->connect();
+	    		$statement = $sql->prepare($query);
+	    		$statement->execute();
+	    		$result = $statement->fetchAll();
+	    		$statement->closeCursor();
+	        } catch (PDOException $e) {
+	            return $e;
+	        }
+			return $result;
+		}
+}
+?>
 
  //Check connection
 // if ($conn->connect_error) {
