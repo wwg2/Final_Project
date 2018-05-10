@@ -11,7 +11,7 @@
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-    <link href="https://web.njit.edu/~snh7/Final_Project/assets/style.css" rel="stylesheet">
+    <link href="https://web.njit.edu/~wwg2/Final_Project/assets/style.css" rel="stylesheet">
     <title>Todo App</title>
   </head>
 
@@ -20,7 +20,7 @@
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
 
-      <a class="navbar-brand" href="https://web.njit.edu/~wwg2/Final_Project/index.php">HOMEPAGE</a>
+      <a class="navbar-brand" href="https://web.njit.edu/~wwg2/Final_Project/">HOMEPAGE</a>
 
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto"></ul>
