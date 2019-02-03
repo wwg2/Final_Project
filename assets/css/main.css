@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+body {
+   font-family: 'Raleway', sans-serif;
+   background-color: var(--lightgray);
+}
+
+.card-header {
+    background-color: var(--paleblue);
+}
+
+.btn-primary {
+    background-color: var(--primary-blue);
+}
+
+.card {
+     overflow: hidden;
+     border-radius: 12px;
+}
+
+.card-register {
+    max-width: 45em;
+    margin: auto;
+}

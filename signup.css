@@ -1,0 +1,92 @@
+
+
+
+
+body{
+font-family: 'Lato', sans-serif;
+background:-moz-linear-gradient(top right, #0d4061, #29adb4);
+	   -o-linear-gradient(top right, #0d4061, #29adb4);
+	   -webkit-linear-gradient(top right, #0d4061, #29adb4);
+	   linear-gradient(top right, #0d4061, #29adb4);
+		}
+
+.content h1{
+text-align:center;
+font-size:40px;
+color:#fff;	
+}
+
+
+h1,h2,h3,h4,h5,h6{
+	margin:0;			   
+	}	
+p{
+	margin:0;
+	}
+ul{
+	margin:0;
+	padding:0;
+	}
+label{
+	margin:0;
+	}
+
+Input[type=text], input[type=password], input[type=email], input[type=date] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+			}
+		
+button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+		 }
+.content {
+	width: 100%;
+
+
+	}
+
+.content h1{
+	text-align:center;
+		font-size:40px;
+			color:#fff;	
+			}
+.content h3{
+	font-size:20px;
+	color:#fff;
+	}
+
+.cancelbtn {				
+	padding: 14px 20px;
+	background-color: #f44336;
+	  }
+	
+.cancelbtn,.signupbtn {
+	float: left;
+	width: 50%;
+	}
+
+.container {
+	background-color: #6ba6c6;
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 8px;
+	border-radius: 15px;
+	}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+	}
+
